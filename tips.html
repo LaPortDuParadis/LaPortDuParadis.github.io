@@ -156,12 +156,36 @@ a:hover {
 
 </style>
 </head>
-<body>
+<body style="background-color: #FFCC66; ">
 <div class="header">
   <h1>La Porte Du Paradis</h1>
   <p><i>The purpose of art of is washing the dust of daily life off our souls </br>
   -Pablo Picasso </i></p>
 </div>
+<div class="w3-content w3-section" style="width:1450px">
+  <img class="mySlides" src="yeet.jpg" style="width:100%">
+  <img class="mySlides" src="yeet2.jpg" style="width:100%">
+  <img class="mySlides" src="yeet4.jpg" style="width:100%">
+  <img class="mySlides" src="yeet5.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+
  <nav class="dropdownmenu"style="position:absolute; width:100%; height:100%; left: 0px; top: 171px;" >
 <ul>
 <li><a href="home.html">Home </a></li>
