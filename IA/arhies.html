@@ -1,0 +1,232 @@
+﻿DOCTYPE html>
+<html lang="en">
+<head>
+<title>Archives and Filmed Footages</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+    background: #ffffff;
+   background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    color:white; }
+
+
+.header {
+
+    background-image:url('12345.jpg');
+    padding: 20px;
+    text-align: center;    
+}
+.dropdownmenu ul{
+background: none;
+list-style: none;
+width:100%;
+}
+.dropdownmenu li{
+float: left;
+position: relative;
+width: auto;
+}
+.dropdownmenu a{
+background: #000000;
+color: #FFFFFF;
+display: block;
+font: 15px/20px serif;
+padding:15px 35px;
+text-align: center;
+text-decoration: none;
+-webkit-transition: all .25s ease;
+-moz-transition: all .25s ease;
+-ms-transition: all .25s ease;
+-o-transition: all .25s ease;
+transition: all .25s ease;
+}
+.dropdownmenu li: hover a {
+background: #D3D3D3;
+}
+#submenu {
+left:0;
+opacity:0;
+position:absolute;
+top:35px;
+visibilty:hidden;
+z-index:1;
+}
+li:hover ul#submenu {
+opacity:1;
+top:30px;
+visibility:visible;
+}
+#submenu li {
+float: none;
+width:100%
+}
+#submenu a:hover [
+background: #000000;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+.left-sidebar {
+	float: left;
+	width: 250px;
+	margin-left: 100%;
+	position: relative;
+	background: transparent ;
+	
+}
+
+.footer {
+    width: 1000px;
+	margin: -100px auto 0;
+	height: 100px;
+	background: transparent;
+	position: relative;
+	text-align:center;
+}
+a {
+	color: #800000;
+}
+a:active {
+	color: #800080;
+}
+a:hover {
+	color: #000080;
+}
+.auto-style3 {
+	margin-top: 0px;
+	}
+.mySlides { display:none;
+ text-align:center;
+  margin: 0px auto;
+  width:auto;
+ }
+}
+
+</style>
+</head>
+<body bgcolor="white">
+<div class="header">
+  <h1>La Porte Du Paradis</h1>
+  <p><i>The purpose of art of is washing the dust of daily life off our souls </br>
+  -Pablo Picasso </i></p>
+</div>
+<div class="w3-content w3-section" style="width:1450px">
+  <img class="mySlides" src="e1.jpg" style="width:100%">
+  <img class="mySlides" src="e2.jpg" style="width:100%">
+  <img class="mySlides" src="e3.jpg" style="width:100%">
+  <img class="mySlides" src="e4.jpg" style="width:100%">
+   <img class="mySlides" src="e5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+ <nav class="dropdownmenu"style="position:absolute; width:100%; height:100%" >
+<ul>
+<li><a href="http://home.html">Home </a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Learn About Art</a>
+<ul id="submenu">
+<li><a href="aloserlook.html">A Closer look</a></li>
+<li><a href="elofarts.html">Element of Art</a></li>
+<li><a href="artists.html">Artists</a></li>
+</ul>
+</li>
+<li><a href="#">Plan Your Visit</a>
+<ul id="submenu">
+<li><a href="hours.html">Hours,Admission and Directions</a></li>
+<li><a href="tips.html">Visitor's Tips</a></li>
+</ul>
+</li>
+<li><a href="#"> Exhibitions and Events</a>
+<ul id="submenu">
+<li><a href="bitions.html">Exhibitions</a></li>
+<li><a href="eents.html">Events</a></li>
+<li><a href="arhies.html">Archives and Filmed Footages</a></li>
+</ul>
+</li>
+<li><a href="#">Collection</a>
+<ul id="submenu">
+<li><a href="paintings.html">Paintings</a></li>
+<li><a href="egyptian.html">Egyptian Antiques</a></li>
+<li><a href="paintanddraw.html">Prints and Drawings</a></li>
+<li><a href="sulpture.html">Sculpture</a></li>
+</ul>
+</li>
+<li class="auto-style3"><a href="#">Account</a>
+<ul id="submenu">
+	<li><a href="login.html">Log in</a></li>
+	<li><a href="Sign%20up.html">Sign up</a></li>
+	</ul>
+     </li>
+	<li><a href="contact.html">Contact Us</a></li>
+	<li><br><br><br><br><br><br><br><br><br><br></li>
+	<table style="width: 100%">
+		<tr>
+			<td><span lang="en-gb">on iew</span></td>
+			<td><span lang="en-gb">upoing</span></td>
+			<td rowspan="3"><span lang="en-gb">alender</span></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td rowspan="3"><span lang="en-gb">pra info</span></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</nav>
+</div>
+</html>
+
+
+
