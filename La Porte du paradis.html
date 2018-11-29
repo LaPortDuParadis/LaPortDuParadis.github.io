@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+    background: #0000;
+   background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+
+    background: #000000 url(https://favourite-paintings.blogspot.com/2011/03/sandro-botticelli-birth-of-venus.html) 100% 100% no-repeat;;
+    padding: 20px;
+    text-align: center;    
+}
+.dropdownmenu ul{
+background: none;
+list-style: none;
+width:100%;
+}
+.dropdownmenu li{
+float: left;
+position: relative;
+width: auto;
+}
+.dropdownmenu a{
+background: #333;
+color: #FFFFFF;
+display: block;
+font: 15px/20px serif;
+padding:15px 35px;
+text-align: center;
+text-decoration: none;
+-webkit-transition: all .25s ease;
+-moz-transition: all .25s ease;
+-ms-transition: all .25s ease;
+-o-transition: all .25s ease;
+transition: all .25s ease;
+}
+.dropdownmenu li: hover a {
+background: #D3D3D3;
+}
+#submenu {
+left:0;
+opacity:0;
+position:absolute;
+top:35px;
+visibilty:hidden;
+z-index:1;
+}
+li:hover ul#submenu {
+opacity:1;
+top:30px;
+visibility:visible;
+}
+#submenu li {
+float: none;
+width:100%
+}
+#submenu a:hover [
+background: #000000;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>La Porte Du Paradis</h1>
+  <p><i>The purpose of art of is washing the dust of daily life off our souls </br>
+  -Pablo Picasso </i></p>
+</div>
+
+ <nav class="dropdownmenu">
+<ul>
+<li><a href="home.html"> Home </a></li>
+<li><a href="about.html"> About</a></li>
+<li><a href="#">Learn About Art</a>
+<ul id="submenu">
+<li><a href="acloserlook.html">A Closer look</a></li>
+<li><a href="elementsofart.html">Element of Art</a></li>
+<li><a href="artists.html">Artists</a></li>
+</ul>
+</li>
+<li><a href="#">Plan Your Visit</a>
+<ul id="submenu">
+<li><a href="hoursadmissionsdirections.html">Hours,Admission and Directions</a></li>
+<li><a href="visitortips.html">Visitor's Tips</a></li>
+</ul>
+</li>
+<li><a href="#"> Exhibitions and Events</a>
+<ul id="submenu">
+<li><a href="exhibitions.html">Exhibitions</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="archivesandfilmedfootages.html"> Archives and Filmed Footages</a></li>
+</ul>
+</li>
+<li><a href="#">Collection</a>
+<ul id="submenu">
+<li><a href="paintings.html">Paintings</a></li>
+<li><a href="egyptianantiques.html">Egyptian Antiques</a></li>
+<li><a href="printsanddrawings.html">Prints and Drawings</a></li>
+<li><a href="sculptures.html">Sculpture</a></li>
+</ul>
+</li>
+<li><a href="#">Account</a>
+<ul id="submenu">
+<li><a href= "login.html">Log in</a></li>
+<li><a href="signup.html"> Sign up</a></li>
+</ul>
+</li>
+</nav>
+</div>
+<div class="row">
+  <div class="column side">
+    <h2><i><u>Follow Us</u></i></h2>
+    <p>Instagram : @laporteduparadis </br>
+    Facebook : @laportefb<br>
+    Twitter : @_laporteduparadis</br></p>
+  </div>
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+</div>
+<div class="footer">
+  <p style="height: 19px">Click Here to Contact Us</p>
+</div>
+  
+</body>
+</html>

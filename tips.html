@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Visitor's Tips</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+    background: #ffffff;
+   background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    color:white; }
+
+
+.header {
+
+    background-image:url('12345.jpg');
+    padding: 20px;
+    text-align: center;    
+}
+.dropdownmenu ul{
+background: none;
+list-style: none;
+width:100%;
+}
+.dropdownmenu li{
+float: left;
+position: relative;
+width: auto;
+}
+.dropdownmenu a{
+background: #000000;
+color: #FFFFFF;
+display: block;
+font: 15px/20px serif;
+padding:15px 35px;
+text-align: center;
+text-decoration: none;
+-webkit-transition: all .25s ease;
+-moz-transition: all .25s ease;
+-ms-transition: all .25s ease;
+-o-transition: all .25s ease;
+transition: all .25s ease;
+}
+.dropdownmenu li: hover a {
+background: #D3D3D3;
+}
+#submenu {
+left:0;
+opacity:0;
+position:absolute;
+top:35px;
+visibilty:hidden;
+z-index:1;
+}
+li:hover ul#submenu {
+opacity:1;
+top:30px;
+visibility:visible;
+}
+#submenu li {
+float: none;
+width:100%
+}
+#submenu a:hover [
+background: #000000;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+.left-sidebar {
+	float: left;
+	width: 250px;
+	margin-left: 100%;
+	position: relative;
+	background: transparent ;
+	
+}
+
+.footer {
+    width: 1000px;
+	margin: -100px auto 0;
+	height: 100px;
+	background: transparent;
+	position: relative;
+	text-align:center;
+}
+a {
+	color: #800000;
+}
+a:active {
+	color: #800080;
+}
+a:hover {
+	color: #000080;
+}
+.auto-style3 {
+	margin-top: 0px;
+	}
+.mySlides { display:none;
+ text-align:center;
+  margin: 0px auto;
+  width:auto;
+ }
+}
+
+.auto-style4 {
+	background-color: #FFFFFF;
+}
+.auto-style5 {
+	font-family: Tie;
+}
+.auto-style6 {
+	vertical-align: baseline;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: rgb(0, 0, 0);
+	font-family: Tie;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	text-align: left;
+	text-indent: 0px;
+	text-transform: none;
+	white-space: normal;
+	word-spacing: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 18px;
+	padding-bottom: 0px;
+	background-color: rgb(255, 255, 255);
+}
+.auto-style7 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+</style>
+</head>
+<body style="background-color: #FFCC66; ">
+<div class="header">
+  <h1>La Porte Du Paradis</h1>
+  <p><i>The purpose of art of is washing the dust of daily life off our souls </br>
+  -Pablo Picasso </i></p>
+</div>
+<div class="w3-content w3-section" style="width:1450px">
+  <img class="mySlides" src="yeet.jpg" style="width:100%">
+  <img class="mySlides" src="yeet2.jpg" style="width:100%">
+  <img class="mySlides" src="yeet4.jpg" style="width:100%">
+  <img class="mySlides" src="yeet5.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+
+ <nav class="dropdownmenu"style="position:absolute; width:100%; height:100%; left: 0px; top: 171px;" >
+<ul>
+<li><a href="home.html">Home </a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Learn About Art</a>
+<ul id="submenu">
+<li><a href="aloserlook.html">A Closer look</a></li>
+<li><a href="elofarts.html">Element of Art</a></li>
+<li><a href="artists.html">Artists</a></li>
+</ul>
+</li>
+<li><a href="#">Plan Your Visit</a>
+<ul id="submenu">
+<li><a href="hours.html">Hours,Admission and Directions</a></li>
+<li><a href="tips.html">Visitor's Tips</a></li>
+</ul>
+</li>
+<li><a href="#"> Exhibitions and Events</a>
+<ul id="submenu">
+<li><a href="bitions.html">Exhibitions</a></li>
+<li><a href="eents.html">Events</a></li>
+</ul>
+</li>
+<li><a href="#">Collection</a>
+<ul id="submenu">
+<li><a href="paintings.html">Paintings</a></li>
+<li><a href="paintanddraw.html">Prints and Drawings</a></li>
+<li><a href="sulpture.html">Sculpture</a></li>
+</ul>
+</li>
+<li class="auto-style3"><a href="#">Account</a>
+<ul id="submenu">
+	<li><a href="login.html">Log in</a></li>
+	<li><a href="Sign%20up.html">Sign up</a></li>
+	</ul>
+     </li>
+	<li><a href="contact.html">Contact Us</a></li>
+	 <li><br><br><br><br><br></li>
+	 <h2 class="auto-style7" style="margin: 0px; padding: 32px 0px 0px; vertical-align: baseline; font-weight: bold; font-size: 1.45em; color: rgb(0, 0, 0); clear: both; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+	 To help you prepare your visit and guide you</h2>
+	<p class="auto-style5" style="margin: 0px; padding: 18px 0px 0px; vertical-align: baseline; font-size: 1.1em; line-height: 1.5em; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+	At <span lang="en-gb">t<span class="auto-style4">he ain entrane of La Porte 
+	du Paradis </span></span>you will find:</p>
+	<p class="auto-style6" style="font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<strong style="margin: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 0, 0);">
+	Information map</strong><br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• available in thirteen languages: Arabic, Chinese, Dutch, English, French, 
+	German, Italian, Japanese, Korean, Hindi, Portuguese, Russian, and Spanish<br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• for visitors with mobility impairments, a version of this map showing 
+	wheelchair accesses, elevators and lifts is available in French and English<br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• all of the practical information you need to visit the museum and 
+	understand the layout of the collections<br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	</p>
+	<p class="auto-style6" style="font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<strong style="margin: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 0, 0);">
+	Weekly schedule of room closures</strong><br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• in French, English, and Japanese<br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• available online:&nbsp;www.l<span lang="en-gb">a<span class="auto-style4">porteduparadis//bookaroo</span></span></p>
+	<p style="margin: 0px; padding: 18px 0px 0px; vertical-align: baseline; font-size: 1.1em; line-height: 1.5em; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+	<span class="auto-style5"><span class="auto-style7">
+	<strong style="margin: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 0, 0);">
+	Calendar</strong><br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• all of the cultural happenings at the museum within a three-month period<br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	• available online:<span>&nbsp;</span>or<span>&nbsp;</span><br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	Thematic trails for children and/or adults are available on request.<br style="margin: 0px; padding: 0px; vertical-align: baseline;">
+	Other thematic trails can be downloaded or printed from the Activities &amp; 
+	Tours section:</span></span><span class="auto-style7"><span>&nbsp;</span></span></p>
+	 </ul>
+	 </nav>
+</div>
+	 <p>&nbsp;</p>
+
+	 
+</html>
+
+
