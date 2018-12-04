@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Paintings</title>
+<title>Sculpture</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -116,26 +116,52 @@ a:hover {
 .auto-style3 {
 	margin-top: 0px;
 	}
-
+.mySlides { display:none;
+ text-align:center;
+  margin: 0px auto;
+  width:auto;
+ }
+}
 
 .auto-style4 {
-	margin-right: 322px;
-}
-.auto-style5 {
-	margin-top: 4px;
+	text-align: center;
+	font-family: Bahnschrift;
 }
 
 </style>
 </head>
-<body bgcolor="teal">
+<body bgcolor="white">
 <div class="header">
   <h1>La Porte Du Paradis</h1>
   <p><i>The purpose of art of is washing the dust of daily life off our souls </br>
   -Pablo Picasso </i></p>
 </div>
+<div class="w3-content w3-section" style="width:1450px">
+  <img class="mySlides" src="jin2.png" style="width:100%">
+  <img class="mySlides" src="jin3.jpg" style="width:100%">
+  <img class="mySlides" src="huh.jpg" style="width:100%">
+  <img class="mySlides" src="jin4.jpg" style="width:100%">
+</div>
 
- <nav class="dropdownmenu"style="position:absolute; width:100%; height:100%; left: 0px; top: 190px;" >
-<ul class="auto-style4">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+ <nav class="dropdownmenu"style="position:absolute; width:100%; height:100%" >
+<ul>
 <li><a href="home.html">Home </a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="#">Learn About Art</a>
@@ -157,7 +183,7 @@ a:hover {
 </ul>
 </li>
 <li><a href="#">Collection</a>
-<ul id="submenu">
+<ul id="submenu" style="left: 0; top: 35px; width: 100%">
 <li><a href="paintings.html">Paintings</a></li>
 <li><a href="paintanddraw.html">Prints and Drawings</a></li>
 <li><a href="sulpture.html">Sculpture</a></li>
@@ -170,41 +196,16 @@ a:hover {
 	</ul>
      </li>
 	<li><a href="contact.html">Contact Us</a></li>
-	<li><br><br><br><br><br><br></li>
-	<h2 style="font-family:'French Script MT'; font-size: 60px; text-align:center">Paintings</h2>
-
-	<table style="width: 100%" class="auto-style5">
+	<li><br><br><br><br>
+	<h2 style="font-family:'French Script MT'; font-size: 60px; text-align:center">Sculptures</h2>
+	<br><br></li>
+	<table style="width: 100%">
 		<tr>
-			<td style="height: 236px">
-			<img height="188" src="paint1.jpg" width="260">
-			<td style="height: 236px">
-			<img height="188" src="pain2.jpg" width="260"></td>
-			<td style="height: 236px">
-			<img height="188" src="paint3.jpg" width="260"></td>
-			<td style="height: 236px">
-			<img height="188" src="paint4.jpg" width="252">&nbsp;</td>
-			<td style="height: 236px">
-			<img height="188" src="paint5.jpg" width="252">&nbsp;</td>
-			<td style="height: 236px"></td>
-		</tr>
-		<tr>
-			<td><img height="188" src="paint12.jpg" width="252">&nbsp;</td>
-			<td><img height="188" src="paint11.jpg" width="252">&nbsp;</td>
-			<td><img height="188" src="paint10.jpg" width="252">&nbsp;</td>
-			<td><img height="188" src="paint9.jpg" width="252">&nbsp;</td>
-			<td><img height="188" src="paint7.jpg" width="252">&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
-	</table>
-	<h2 style="font-family:Bahnschrift;text-align:center">History of Painting<span lang="en-gb">s</span></h2>
+			<td>
+			<img height="400" src="herales.jpg" width="290">
+		   </table>
+	<h2 style="font-family:Bahnschrift;text-align:center">Story of Heracles</h2>
 	<p style="font-family:'Times New Roman', Times, serif; font-size: large; text-align:justify;background:transparent">
-	The pride of La Porte du Paradis is  our enigmatic yet eye-opening collection of paintings	<br/>
-	<hr>
-		During the first half of the nineteenth century history painting was one of the few ways that the British public could experience its overseas Empire. In this context, history painting became a form of documentation. Artists such as Benjamin West and Henry Nelson O’Neil became more interested in painting scenes of recent and contemporary history, depicting people in modern dress rather than the ‘timeless attire’ as seen in traditional history painting.
-	
-	</p>
-
-</nav>
-</div>
+	Heracles, Greek Herakles, Roman Hercules, one of the most famous Greco-Roman legendary heroes. Traditionally, Heracles was the son of Zeus and Alcmene (see Amphitryon), granddaughter of Perseus. Zeus swore that the next son born of the Perseid house should become ruler of Greece, but—by a trick of Zeus’s jealous wife, Hera—another child, the sickly Eurystheus, was born first and became king. When Heracles grew up, he had to serve Eurystheus and also suffer the vengeful persecution of Hera; his first exploit was the strangling of two serpents that she had sent to kill him in his cradle.</p>
+	</div>
 </html>
-

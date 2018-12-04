@@ -131,24 +131,6 @@ a:hover {
   <p><i>The purpose of art of is washing the dust of daily life off our souls </br>
   -Pablo Picasso </i></p>
 </div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); 
-}
-</script>
-
  <nav class="dropdownmenu"style="position:absolute; width:100%; height:100%" >
 <ul>
 <li><a href="home.html">Home </a></li>
